@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template: 56px 968px/ 218px auto;
+    grid-template-areas:
+        "header header"
+        "sidebar content";
+
+}
+
+nav {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.logoYt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.search {
+    width: 404px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+input {
+    width: 348px;
+    height: 42px;
+    border: solid 1px #ccc;
+    outline: none;
+}
+
+#lupa-alinha {
+    width: 57px;
+    height: 42px;
+    background-color: #F8F8F8;
+    border: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#sideBar {
+    grid-area: sidebar;
+    display: grid;
+    grid-template: repeat(10, 24px)/max-content;
+    padding: 24px;
+    gap: 24px;
+}
+
+#sideBar p {
+    width: fit-content;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    grid-area: content;
+    display: grid;
+    grid-template: repeat(3,262px)/ repeat(4, auto);
+    padding: 16px;
+    place-items: flex-start center;
+    background-color: #F9F9F9;
+    ;
+}
+
+.videos {
+    width: 262px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.videoDescricao {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.videoDescricao .title {
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.videoDescricao .title .estatisticas {
+    color: #515151;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+}
