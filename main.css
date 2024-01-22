@@ -107,6 +107,11 @@ main {
     gap: 16px;
 }
 
+.thumbVideo{
+    width: 250px;
+    height: 140px;
+}
+
 .videoDescricao {
     display: flex;
     align-items: flex-start;
